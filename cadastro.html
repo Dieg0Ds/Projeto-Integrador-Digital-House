@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>Pagina cadastro</title>
 </head>
 
@@ -20,16 +21,16 @@
                 <button class='button' id="button"><i class="fa fa-search"></i></button>
             </div>
             <div class="usuario">
-            <i class="fa fa-user"></i>
-            <p>Olá, Usuário</p>
-            <p>&or;</p>
+                <i class="fa fa-user"></i>
+                <p>Olá, Usuário</p>
+                <p>&or;</p>
             </div>
         </nav>
     </header>
 
     <main>
         <nav>
-            <ul class="links">
+            <ul class="nav-links">
                 <li><a href="loja.html">Loja</a></li>
                 <li><a href="brasileiros.html">Brasileiros</a></li>
                 <li><a href="internacionais.html">Internacionais</a></li>
@@ -38,31 +39,31 @@
         </nav>
         <p></p>
         <h1>Dados Pessoais</h1>
-        <p>Campos marcados com barra são de preenchimento obrigatório:</p>
+        <p>Campos marcados com <b>(*)</b> são de preenchimento obrigatório:</p>
         <form>
-            <label for="nome">*Nome Completo:</label>
+            <label for="nome"><b>*</b>Nome Completo:</label>
             <br>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
             <br>
             <br>
-            <label for="data">*Data Nascimento:</label>
+            <label for="data"><b>*</b>Data Nascimento:</label>
             <br>
             <input type="date" id="data" name="data">
             <br>
             <br>
-            <label for="nome">*CPF:</label>
+            <label for="cpf"><b>*</b>CPF:</label>
             <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu CPF" required>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
             <br>
             <br>
-            <label>*Sexo:</label>
+            <label><b>*</b>Sexo:</label>
             <br>
-            <input type="radio" id="masculino" name="genero" value="sim" checked><label
+            <input type="radio" id="masculino" name="masculino" value="sim" checked><label
                 for="masculino">Masculino</label>
-            <input type="radio" id="feminino" name="genero" value="nao"><label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="feminino" value="nao"><label for="feminino">Feminino</label>
             <br>
             <br>
-            <b>Ao menos um telefone deve ser informado</b>
+            <b><b>*</b>Ao menos um telefone deve ser informado:</b>
             <br>
             <br>
             <label for="phone">Telefone Fixo ou Comercial:</label>
@@ -75,91 +76,89 @@
             <input type="tel" id="phone" name="phone" placeholder="Digite seu Telefone">
             <br>
             <br>
-            <label for="email">E-mail:</label>
+            <label for="email"><b>*</b>E-mail:</label>
             <br>
             <input type="email" id="email" nome="email" placeholder="email@me.com" required>
             <br>
             <br>
-            <label for="email">Digite novamente:</label>
+            <label for="email"><b>*</b>Digite novamente:</label>
             <br>
             <input type="email" id="email" nome="email" placeholder="email@me.com" required>
             <br>
             <br>
-            <input type="checkbox" name="genero" id="terror" value="terror" checked><label for="terror">Desejo receber
+            <input type="checkbox" name="capitura" id="capitura" value="terror" checked><label for="capitura">Desejo
+                receber
                 E-mails promocionais</label>
             <br>
             <br>
-            <label for="senha">*Crie sua <b>Senha de acesso:</b></label>
+            <label for="senha"><b>*</b>Crie sua <b>Senha de acesso:</b></label>
             <br>
             <input type="password" id="senha" nome="senha">
             <br>
             <br>
-            <label for="senha">*Digite novamente:</label>
+            <label for="senhanovamente"><b>*</b>Digite novamente:</label>
             <br>
-            <input type="password" id="senha" nome="senha">
+            <input type="password" id="senhanovamente" nome="senhanovamente">
             <br>
             <br>
-            <h2>Dados Adicionais</h2>
-            <label for="nome">*Qual seu time do do coração?:</label>
+            <h3>Dados Adicionais</h3>
+            <label for="time"><b>*</b>Qual seu time do do coração?:</label>
             <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
+            <input type="text" id="time" name="time" placeholder="Digite Aqui!" required>
             <br>
-            <h2>Dados de Entrega</h2>
+            <br>
+            <br>
+            <h3><b>Dados de Entrega:</b></h3>
+            <br>
             <h3>Endereço utilizado para entrega do pedido:</h3>
-            <label for="nome">*Tipo do endereço:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
+            <label for="enderecoPraEntrega"><b>*</b>Tipo do endereço:</label>
+            <input type="text" id="enderecoPraEntrega" name="enderecoPraEntrega" placeholder="Digite Aqui!" required>
             <b>exemplo.: Residencial, Comercial,Casa dos pais</b>
             <br>
             <br>
-            <label for="nome">*Destinatário:</label>
+            <label for="nomeDestinatario"><b>*</b>Destinatário:</label>
             <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
-            <br>
-            <br>
-            <label for="quantity">*CEP:</label>
-            <br>
-            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <input type="text" id="nomeDestinatario" name="nomeDestinatario" placeholder="Digite Aqui!" required>
             <br>
             <br>
-            <label for="nome">*Endereço:</label>
+            <label for="cep"><b>*</b>CEP:</label>
             <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
-            <br>
-            <br>
-            <label for="nome">*Complemento:</label>
-            <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
+            <input type="number" id="cep" name="cep" placeholder="********" min="1" max="10">
             <br>
             <br>
-            <label for="nome">*Bairro:</label>
+            <label for="enderecodestinatario"><b>*</b>Endereço:</label>
             <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
-            <br>
-            <br>
-            <label for="nome">*Cidade:</label>
-            <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
+            <input type="text" id="enderecodestinatario" name="enderecodestinatario" placeholder="Digite Aqui!"
+                required>
+            <label for="numeroEndereco"><b>*</b>N:</label>
+            <input type="number" id="numeroEndereco" name="numeroEndereco" placeholder="****" min="1" max="10">
             <br>
             <br>
-            <label for="nome">*Estado:</label>
+            <label for="ComplementoEndereco">Complemento:</label>
             <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
-            <br>
-            <br>
-            <label for="nome">*País:</label>
-            <br>
-            <input type="text" id="nome" name="nome" placeholder="Digite Aqui!" required>
+            <input type="text" id="ComplementoEndereco" name="ComplementoEndereco" placeholder="Digite Aqui!" required>
             <br>
             <br>
-
-
-
-
-
-
-
-
-
+            <label for="bairro"><b>*</b>Bairro:</label>
+            <br>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite Aqui!" required>
+            <br>
+            <br>
+            <label for="cidade"><b>*</b>Cidade:</label>
+            <br>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite Aqui!" required>
+            <br>
+            <br>
+            <label for="estado"><b>*</b>Estado:</label>
+            <br>
+            <input type="text" id="estado" name="estado" placeholder="Digite Aqui!" required>
+            <br>
+            <br>
+            <label for="pais"><b>*</b>País:</label>
+            <br>
+            <input type="text" id="pais" name="pais" placeholder="Digite Aqui!" required>
+            <br>
+            <br>
 
         </form>
 
