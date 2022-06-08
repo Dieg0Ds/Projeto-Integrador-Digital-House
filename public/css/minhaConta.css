@@ -12,25 +12,25 @@ body {
     min-width: 1280px;
 }
 
-nav {
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 9px 39px 9px 19px;
+   
     
 }
 
-.nav-links {
+.nav{
     display: flex;
 }
 
-.nav-links li {
+.nav{
     list-style: none;
     margin-right: 170px;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 20px;
 }
-.nav-links li a {
+.nav{
     text-decoration: none;
     color: #777777;
     text-transform: uppercase;
@@ -38,4 +38,8 @@ nav {
 b{
     color: red;
 }
-
+button{
+   
+    
+    font-size: 20px;
+}
