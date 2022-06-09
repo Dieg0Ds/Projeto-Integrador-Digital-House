@@ -28,6 +28,11 @@ header {
     justify-content: space-between;
 }
 
+.nav a {
+    text-decoration: none;
+    color:white;
+}
+
 .search {
     position: relative;
     width: 516px;

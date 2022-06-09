@@ -1,6 +1,6 @@
 const politicaController = {
     index: (req, res) => {
-        res.render("politica")
+        res.render("home/politica")
     },
     create: (req, res) => {
         res.send("Create")

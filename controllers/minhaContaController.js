@@ -1,6 +1,6 @@
 const minhaContaController = {
     index: (req, res) => {
-        res.render("minhaConta")
+        res.render("home/minhaConta")
     },
     create: (req, res) => {
         res.send("Create")

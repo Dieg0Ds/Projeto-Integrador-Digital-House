@@ -1,6 +1,6 @@
 const trabalheConoscoController = {
     index: (req, res) => {
-        res.render("trabalheConosco")
+        res.render("home/trabalheConosco")
     },
     create: (req, res) => {
         res.send("Create")
