@@ -5,12 +5,25 @@ const homeController = {
     cadastro: (req, res) => {
         res.render("home/cadastro")
     },
+    carrinho: (req, res) => {
+        res.render("home/carrinho")
+    },
+
+    login: (req, res) => {
+        res.render("home/login")
+    },
+    minhaConta: (req, res) => {
+        res.render("home/minhaConta")
+    },
+    politica: (req, res) => {
+        res.render("home/politica")
+    },
     sobre: (req, res) => {
         res.render("home/sobre")
-},
-login: (req, res) => {
-    res.render("home/login")
-}
+    },
+    trabalheConosco: (req, res) => {
+        res.render("home/trabalheConosco")
+    }
 }
 
 module.exports = homeController;
